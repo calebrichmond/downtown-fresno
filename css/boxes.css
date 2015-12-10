@@ -14,7 +14,7 @@ body{
     margin:20px auto;
 }
 #box1, #box2, #box3 {
-    width:300px;
+    width:330px;
     height:400px;
     /*min-height:540px*/
     float:left;
@@ -64,7 +64,7 @@ body{
         visibility:hidden;
     }
     .imageClass{
-        width:90%;
+        width:100%;
     }
 }
 

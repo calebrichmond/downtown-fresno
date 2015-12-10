@@ -1,0 +1,506 @@
+/*GLOABAL STLYES*/
+
+/*
+==================================
+GLOBAL STLYES FOR NON MOBILE SITE
+===================================
+*/
+
+/** {color:#FF0000;} BE CAREFUL USING THIS GLOBAL SELECTOR */
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron:500|Russo+One);
+
+html, body{
+    height:100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {color:#000000;font-size:1em;}
+    
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#FFFFFF;
+    /*font-family:'Lucida Sans', Helvetica, sans-serif;*/
+    font-family: 'Orbitron', sans-serif;
+    font-size:16px;
+    font-weight:500;
+    color:#000000;
+}
+
+h1,h2,h3{
+    color:#000066;
+    margin:0px;
+    padding:0px;
+}
+
+h1{
+    font-size:2.5em;
+}
+
+p{
+    margin:15px 0px;
+    line-height:20px;
+}
+
+b, strong{
+    color:#0000FF;
+}
+a{
+    color:#000000;
+    text-decoration:none;
+}
+
+
+a:hover{
+    color:#0000CC;
+    text-decoration:underline;
+}
+
+figure{
+    margin:0px;
+    padding:0px;
+}
+
+
+/*HEADER STYLES*/
+
+header {
+    background-color:#6E6E63;
+    height:150px;
+}
+
+#header {
+    padding:15px 0px;
+    position:relative;
+}
+
+#logo{
+    padding:15px;
+    color:#0000CC;
+}
+
+#logo:hover{
+    color:#000000;
+    text-decoration:none;
+}
+
+
+/*NAVIGATION STYLES*/
+
+#menu {
+    position:absolute;
+    top:40px;
+    right:5%;
+}
+/*#menu ul{*/
+/*    display:block;*/
+/*}*/
+#menu li{
+    display:inline;
+    margin:0px 5px 0px 5px;
+    border-radius:20px 0px 20px 0px;
+    padding:15px;
+    font-weight:600;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#menu li:hover{
+    background-color:#00000;
+}
+
+#menu li:after{
+    content:"|";
+    padding:16px 20px
+}
+
+.currentPage a{
+    color:#FF0000;
+}
+
+/*BANNER STYLES*/
+
+#bannerHome {
+    border:5px solid #000000;
+    padding:80px 0px;
+    background:url(../images/elites.jpg) no-repeat center center #9A9A92;
+    background-size:center;
+    overflow:hidden;
+}
+#bannerAbout{
+    border:5px solid #000000;
+    padding:50px 0px;
+    background:url(../images/tony.gif) no-repeat bottom center #9A9A92;
+    background-size:cover;
+    overflow:hidden;
+}
+#bannerContact{
+    border:5px solid #000000;
+    padding:50px 0px;
+    background:url(../images/nickcage.gif) no-repeat bottom center #9A9A92;
+    background-size:cover;
+    overflow:hidden;
+}
+.bannerTitle{
+    text-align:center;
+    color:#0000ff;
+    font-size:3em;
+    text-shadow:6px 6px 30px #000000;
+}
+/*MAIN BODY SECTION*/
+
+.mainWidth{
+    width:1200px;
+    margin:0px auto;
+    background-color:#898989;
+}
+
+#main{
+    margin-bottom:25px;
+}
+
+/*COLUMN STYLES*/
+
+.columnA,.columnB,.columnC{
+    width:384px;
+    margin:0px 8px;
+    float:left;    
+}
+/*.columnA, .columnB{*/
+/*    float:left;*/
+/*    margin-right:24px;*/
+/*}*/
+/*.columnC{*/
+/*    float:right*/
+/*}*/
+
+.columnA h2,.columnB h2,.columnC h2{
+    color:#000066;
+    font-size:2.1em;
+    font-weight:900;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/*.likeImage{THIS STYLE IS TEMP. UNITL WE PUT IN IMAGES
+/*    width:384px;*/
+/*    height:225px;*/
+/*    background-color:#757575;*/
+/*}*/
+
+.likeImage span{
+    color:#ffffff;
+    display:block;
+    background-color:#000066;
+    text-align:center;
+    font-size:1.8em;
+    font-weight:700;
+    text-transform:uppercase;
+    padding:18px 0px;
+}
+
+.columnA p,.columnB p,.columnC p{
+    color:#000000;
+    font-size:1.3em;
+    text-align:justify;
+    padding:0px;
+}
+
+/*BUTTON STYLES*/
+a.button, button.button{
+    font-size:1.5em;
+    border-radius:26px;
+    -webkit-border-radius:6px;
+    -moz-border-raidus:6px;
+    -o-border-raidus:6px;
+    text-align:center;
+    background-color:#000000;
+    text-transform:uppercase;
+    border:4px solid #000080;
+    font-weight:600;
+    color:#FFFFFF;
+    padding:6px 10px;
+    float:left;
+}
+a.button:hover, .button:hover{
+    background-color:#000000;
+    cursor:url(../images/predator_laser_sight.png) auto;
+    border:4px solid #0000ff;
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+#bannerButton{
+    width: 375px;
+    margin: 0px auto;
+    margin-top:25px;
+}
+
+
+/*ABOUT ME STYLES*/
+
+.alignLeft{
+    float:left;
+    width:384px;
+    margin-right:24px;
+}
+
+
+.alignRight{
+    float:right;
+    width:792px;
+    text-align:justify;
+}
+
+/*FOOTER STYLES*/
+
+footer{
+    clear:both;
+    margin-top:25px;
+}
+.copyright{
+    overflow:hidden;
+    padding:30px 0px;
+    border-top:3px solid #000000; 
+    background-color:#E2E2E2;
+    display:block;
+}
+.social{
+    text-align:center;
+}
+
+
+.copyright p{
+    text-align:center;
+    font-size:20px;
+}
+
+footer p{
+    font-size:20px;
+    text-align:center;
+}
+
+footer p a{
+    color:#000000;
+}
+
+footer p a:hover{
+    color:#0000CC;
+    text-decoration:none;
+}
+
+/*EXTRA STYLES*/
+
+textarea{
+    height:200px;
+    border-radius:10px 8px;
+    border-color:#002699;
+    border-width:5px;
+}
+input{
+    border-radius:18px;
+    border:2px solid #0000ff;
+    box-shadow:2px 2px 2px #ffff00;
+    color:#000000;
+    height:20px;
+    text-align:center;
+    display:block;
+}
+.form{
+    margin:50px 50px;
+    border-radius:15px;
+    padding:25px;
+    width:25%;
+}
+legend{
+    background-color:#069420;
+}
+fieldset{
+    background-color:#420420;
+}
+
+.label{
+    color:#000666;
+    font-weight:900;
+}
+.fa{
+    border-radius:100%;
+    background-color:#0000CC;
+    border:3px solid #FFFFFF;
+    font-size:2em !important;
+    margin:15px;
+    color:#FFFFFF;
+    height:28px;
+    width:28px;
+    padding:10px;
+    text-align:center;
+}
+
+.fa:hover{
+    background-color:#FF7900;
+}
+.fa-instagram{background-color:#0C516E;}
+.fa-twitter{background-color:#8CA6D9;} 
+
+/*==============TABLE STYLES==========*/
+#myData{
+    margin:auto 0px;
+    width:900px;
+}
+#myHeader tr th {
+    color:#ffffff;
+    background-color:#003366;
+    text-shadow:1px 1px 2px #000000;
+    padding:20px 0px;
+    font-size:1.5em;
+}
+tr th{
+    background-color:#c9c9c9;
+}
+table{
+    border-radius:6px;
+    background-color:#ffffff;
+}
+.grayCell{
+    background-color:#c6c6c6;
+}
+tfoot > tr{
+    background-color:#09dca1;
+    text-align:center;
+}
+tr:hover{
+    background-color:#911911;
+}
+td{
+    text-align:center;
+    font-size:1.5em;
+}
+th{
+    text-align:center;
+    font-size:1.5em;
+}
+
+#groupData{
+    margin:auto 0px;
+    width:900px;
+}
+#groupHeader{
+    margin:auto 0px;
+    width:900px;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        background-color:#b3d9ff;
+    }
+    .columnA, .columnB, .columnC {
+        width:auto;
+        margin:1% auto;
+    }
+    h3{
+        font-size:.75em;
+    }
+    h4{
+        font-size:1em;
+    }
+    #box3{
+        /*display:none;*/
+        visibility:hidden;
+    }
+    .likeImage{
+        width:90%;
+    }
+}
+html,body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color:#911911;
+}
+
+#mainBody{
+    width:1200px;
+    margin:20px auto;
+}
+#box1, #box2, #box3 {
+    width:330px;
+    height:400px;
+    /*min-height:540px*/
+    float:left;
+    color:#fff;
+    padding:20px;
+    margin:15px;
+    
+}
+
+#box1{
+    background-color:#696969;
+}
+
+#box2{
+    background-color:#000666;
+}
+
+#box3{
+    background-color:#069420;
+}
+.imageClass{
+        width:250px;
+        height:150px;
+        border-radius:20px 20px;
+        margin:0px auto;
+        display:block;
+    }
+
+/*MY MEDIA QUERIES FOR SCREEN SIZES 500PX*/
+
+@media screen and (max-width: 1024px) {
+    body{
+        background-color:#b3d9ff;
+    }
+    #box1, #box2, #box3 {
+        width:auto;
+        margin:1% auto;
+    }
+    h3{
+        font-size:.75em;
+    }
+    h4{
+        font-size:1em;
+    }
+    #box3{
+        /*display:none;*/
+        visibility:hidden;
+    }
+    .imageClass{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 325px) {
+    
+    
+}
+    
+
+/*================ TARGETING MOBILE PHONES ================*/
+
+@media screen and (max-width: 325px) {
+    
+}
+
+/*================ TARGETING MOBILE DEVICES - LIKE WATCHES ================*/
+
+@media screen and (max-width: 100px){
+    
+    
+}
