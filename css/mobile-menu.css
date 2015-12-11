@@ -13,21 +13,27 @@
     display:none;
 }
 
-/*TARGETING TABLET DEVICES 1024PX OR SMALLER*/
+    .calebMe{
+        margin:0px auto;
+        display:block;
+        width:384px;
+    }
 
-@media screen and (max-width:1024x) {
+/* TARGETING TABLET DEVICES 1024PX OR SMALLER */
+
+@media screen and (max-width:1024px) {
     nav ul {
         display:none;
     }
     label {
         display:block;
-        background-color:#F1F1F1;
+        background-color:#000666;
         width:40px;
         height:50px;
         cursor:pointer;
         position:absolute;
         right:20px;
-        top:0px;
+        top:40px;  /* <---- WAS 0PX --- */
         border-radius:4px 4px 0px 0px;
         
         color:#FFFFFF;
@@ -55,7 +61,7 @@
     }
     
     nav a {
-        color:#FFFFFF;
+       color:#FFFFFF; 
     }
     
     nav ul li {
@@ -63,16 +69,60 @@
         float:right;
         width:50%;
         text-align:left;
-        background:#000000;
+        background-color:#000000;
         text-indent:15px;
     }
     
     #mobileMenu {
         width:500px;
         height:300px;
-        background-color:#F1F1F1;
+        background-color:#000666;
     }
-    nav > ul > li {
-        
+    
+    .calebMe {
+        width:100%;
+    }
+    
+    .mobileAside {
+        width:100%;
+        display:block;
+    }
+    
+    .mobileAbout {
+        width:auto;
+        display:block;
+        margin:25px 0px;
+    }
+    
+    .columnA, .columnB, columnC{
+        width:auto;
+        margin:1% auto; 
+    }
+    
+    .columnA h2, .columnB h2, columnC h2{
+         font-size:3em;   
+    }
+    
+    .mainWidth{
+        width:95%;
+        padding:20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

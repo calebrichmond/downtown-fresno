@@ -4,26 +4,32 @@
     <head>
         <title>Caleb Richmond</title>
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="css/mobile-menu.css" type="text/css" />
         <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+        
         
         <meta charset="UTF-8" />
         <meta name="description" content="Welcome to Caleb Richmonds Website where you'll learn about my friends, family, and other things that i like." />
         <meta name="keywords" content="Caleb, Richmond, 16, Creative, Kind, Funny, Imaginative, Clovis High, 12v2, Nerd, Collector, Game of Thrones," />
-        
         <meta name="author" content="Caleb Richmond" />
         
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; " />
     </head>
     <body>
-            <header>
+        <header>
+            
+            <input type="checkbox" id="nav" /><label for="nav">MENU</label>
+            
             <div class="mainWidth" id="header">
                     <figure>
                         <!--<a href="index.html" id="logo"><img src="images/shield.jpg" alt="Caleb Richmond logo"/></a>-->
                         
                         <h1><a href="index.html" id="logo">Caleb Richmond</a></h1>
                     </figure>
-                    <nav id="menu">
-                        <ul>
+                    <nav class="mobile" id="menu">
+                        <!--<a></a>-->
+                        <!--INPUT WAS HERE-->
+                        <ul id="mobileMenu">
                             <li class="currentPage"><a href="index.html" title="Home">Home</a></li>
                             <li><a href="about.html" title="About Me">About Me</a></li>
                             <li><a href="typing.html" title="typing">Typing</a></li>
@@ -33,12 +39,15 @@
                     </nav>
                 </div>
             </header>
+            
             <div id="bannerHome">
+                
                 <h1 class="bannerTitle" class="button">Welcome To My Page</h1>
                 <div id="bannerButton">
                     <a href="about.html" class="button" title="information about me">More About Me</a>
                 </div>
             </div> <!-- id ="bannerHome" -->
+            
             <section class="mainWidth" id="main">
                 
                 <!--COLUMN (A) STARTS HERE-->
@@ -46,7 +55,7 @@
                     <h2>Modernization</h2>
                     <figure class="likeImage">
                        <a href="http://movies.disney.com/marvels-avengers-age-of-ultron" title="#" target="_blank" class="image image-full"><img src="images/downtown.jpg" class="imageClass" title="avengers" alt="avengers logo"/></a>
-                       <span>avengers assemble</span>
+                       <span>Make Fresno Modern</span>
                     </figure>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, neque, labore esse incidunt cupiditate pariatur maiores consequatur qui fuga vitae magnam nulla temporibus unde sit sint accusantium tempore. Quas, nemo!</p>
                     <a href="http://movies.disney.com/marvels-avengers-age-of-ultron" title="avengers" alt="avengers assembles" target="_blank" class="button">AVENGERS ASSEMBLE!!</a>
@@ -58,7 +67,7 @@
                     <h2>Revitalzation</h2>
                     <figure class="likeImage">
                        <a href="http://gameofthrones.com/" title="#" target="_blank" class="image image-full"><img src="images/downtown.gif" class="imageClass" title="drogon" alt="fire and blood"/></a>
-                       <span>Fire and Blood</span>
+                       <span>Revitalzation</span>
                     </figure>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, neque, labore esse incidunt cupiditate pariatur maiores consequatur qui fuga vitae magnam nulla temporibus unde sit sint accusantium tempore. Quas, nemo!</p>
                     <a href="http://hbo.com" title="drogon" alt="dracarays" target="_blank" class="button">Game of thrones</a>
@@ -70,7 +79,7 @@
                     <h2>Fulton Mall</h2>
                     <figure class="likeImage">
                        <a href="https://en.wikipedia.org/wiki/Alien_vs._Predator" title="#" target="_blank" class="image image-full"><img src="images/fulton.jpg" class="imageClass" title="avp" alt="aliens vs predator"/></a>
-                       <span>hunter survivor prey</span>
+                       <span>Clean up Fulton Mall</span>
                     </figure>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, neque, labore esse incidunt cupiditate pariatur maiores consequatur qui fuga vitae magnam nulla temporibus unde sit sint accusantium tempore. Quas, nemo!</p>
                     <a href="https://foxmovies.com" title="ALiens vs predator" alt="avp" target="_blank" class="button">Which will you be
@@ -78,9 +87,12 @@
                 </article>
                 <!--COLUMN (C) ENDS HERE-->                
            </section>
+            
             <section class="mainWidth" id="main">
-                <aside class="alignLeft">
-                    <figure><img src="images/caleb-richmond).jpg" title="Me" alt="me"/></figure>
+                <aside class="alignLeft mobileAside">
+                    <figure>
+                        <img src="images/mybaby.jpg" title="Me" alt="me" class="calebMe"/>
+                    </figure>
                 </aside>
                 <article class="alignRight">
                     <h2>Caleb Richmond</h2>
